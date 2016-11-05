@@ -30,7 +30,8 @@ public class Cliente{
 	}
 	
 	public void notificarAlteracao(){
-		this.desconto.notificar();
+		int idade = this.getIdade();
+		this.desconto.notificar(idade);
 	}
 	
 	public int getIdade(){
@@ -46,6 +47,18 @@ public class AtualizaDesconto implements Observador{
 	private boolean recebeDesconto;
 	
 	public boolean notificar(int Idade){
-		
+		// code ...
 	} 
+}
+
+public class LiberaDesconto extends Cliente{
+	private boolean recebeDesconto;
+	
+	public void MudarDesconto(){
+		// code ...
+	}
+	
+	public void ObterDesconto(){
+		// code ...
+	}
 }
